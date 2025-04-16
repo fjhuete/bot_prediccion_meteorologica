@@ -1,0 +1,2 @@
+# bot_prediccion_meteorologica
+Este programa hace que una cuenta de mastodon publique cada hora la predicción de esa misma hora del día siguiente en un municipio. Usa la API de AEMET para consultar la predicción meteorológica.

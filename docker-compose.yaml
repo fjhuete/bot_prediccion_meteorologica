@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: weather_bot
+    image: fjhuete/bot_prediccion_meteorologica:1
+    restart: always
+    environment:
+      id_municipio: ${id_municipio}
+      municipio: ${municipio}
+      api_key: ${api_key}
+      client_id: ${client_id}
+      client_secret: ${client_secret}
+      access_token: ${access_token}
+      api_base_url: ${api_base_url}
