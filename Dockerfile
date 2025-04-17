@@ -4,7 +4,7 @@ COPY app .
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh \
 && pip install --no-cache-dir --break-system-packages -r requirements.txt \
-&& echo "Europe/Madrid" > /etc/timezone
+&& ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
 ENV id_municipio = "41083"
 ENV municipio = "Dos Hermanas"
 ENV api_key = "xxx"
